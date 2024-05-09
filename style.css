@@ -1,0 +1,67 @@
+@font-face {
+  font-family: HankenGrotesk-Bold;
+  src: url(/assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+@font-face {
+  font-family: HankenGrotesk-ExtraBold;
+  src: url(/assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+@font-face {
+  font-family: HankenGrotesk-Medium;
+  src: url(/assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span{
+  font-size: 18px;
+}
+
+.container{
+  display: grid;
+  min-height: 100dvh;
+  place-content: center;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+.resultArea{
+  background-color: #fff;
+  grid-column: 2;
+}
+
+.summaryArea{
+  background-color: red;
+  grid-column: 3;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .container{
+    display: grid;
+    min-height: 100dvh;
+    place-content: center;
+    background-color: #000;
+    grid-template-columns: 1fr;
+    grid-template-row: repeat(2, 1fr);
+
+
+  }
+  .resultArea{
+    background-color: #fff;
+    grid-column: 1;
+    min-height: 50dvh;
+  }
+  
+  .summaryArea{
+    background-color: red;
+    grid-column: 1;
+    min-height: 50dvh;
+  }
+
+}
