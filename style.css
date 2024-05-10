@@ -26,17 +26,102 @@ span{
   min-height: 100dvh;
   place-content: center;
   grid-template-columns: repeat(4, 1fr);
-
+  grid-template-rows: 20px 500px 20px;
 }
 
 .resultArea{
-  background-color: #fff;
+  background-color:  hsl(241, 81%, 54%);
   grid-column: 2;
+  grid-row: 2;
+  padding: 20px 0;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  gap: 30px;
+}
+.title{
+  font-family: HankenGrotesk-Bold;
+  color: hsl(241, 100%, 89%);
+  font-size: 20px;
+}
+.yourResultCircle{
+  background-color: hsla(256, 72%, 46%, 1);
+  padding: 40px 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.avaregeOf100{
+  color: hsl(0, 0%, 100%);
+  font-family: HankenGrotesk-ExtraBold;
+  font-size: 60px;
+}
+.of100{
+  font-family: HankenGrotesk-Medium;
+  color: hsl(241, 100%, 89%);
 }
 
 .summaryArea{
-  background-color: red;
+  background-color: hsl(0, 0%, 100%);
   grid-column: 3;
+  grid-row: 2;
+  border-radius : 10px;
+  box-shadow: 8px 8px 8px 8px hsl(221, 100%, 96%);
+  display: grid;
+  place-items: center;
+}
+
+.summaryArea > button{
+  cursor: pointer;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-family: HankenGrotesk-Medium;
+  font-size: 14px;
+  padding: 1rem 80px;
+  border-radius: 24px;
+  border: none;
+}
+
+.summaryTitle{
+  font-family: HankenGrotesk-Bold;
+  font-size: 20px;
+  color: hsl(224, 30%, 27%);
+}
+
+.painelPointsArea{
+  display: grid;
+  gap: 16px;
+  min-width: 250px;
+  padding: 10px;
+  font-family: HankenGrotesk-Medium;
+}
+
+.reactArea,
+.memoryArea,
+.verbalArea,
+.visualArea {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 16px;
+  justify-content: space-between;
+}
+
+.reactArea{
+  background-color: red;
+}
+.iconArea{
+  display: flex;
+  gap: 8px;
+}
+.memoryArea{
+  background-color: yellow;
+}
+.verbalArea{
+  background-color: green;
+}
+.visualArea{
+  background-color: blue;
 }
 
 
