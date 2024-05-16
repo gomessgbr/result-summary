@@ -23,18 +23,20 @@ span{
 
 .container{
   display: grid;
-  min-height: 100dvh;
+  min-height: 95dvh;
+ 
+
   place-content: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 20px 500px 20px;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-rows: 20px 500px 20px; */
 }
 
 .resultArea{
   background-color:  hsl(241, 81%, 54%);
   grid-column: 2;
   grid-row: 2;
-  padding: 20px 0;
-  border-radius: 18px;
+  padding: 20px 80px;
+  border-radius: 18px ;
   display: grid;
   place-items: center;
   gap: 30px;
@@ -58,17 +60,35 @@ span{
 }
 .of100{
   font-family: HankenGrotesk-Medium;
-  color: hsl(241, 100%, 89%);
+  color: hsl(241, 100%, 90%);
+  opacity: 0.5;
+ 
+}
+
+.resultArea{
+  & > p:nth-of-type(2){
+    font-family: HankenGrotesk-ExtraBold;
+    font-size: 32px;
+    color: hsl(0, 0%, 100%);
+  }
+  & > p:nth-of-type(3){
+    font-family: HankenGrotesk-Medium;
+    color: hsl(0, 0%, 100%);
+    opacity: 0.5;
+    text-align: center;
+  }
 }
 
 .summaryArea{
   background-color: hsl(0, 0%, 100%);
   grid-column: 3;
   grid-row: 2;
-  border-radius : 10px;
-  box-shadow: 8px 8px 8px 8px hsl(221, 100%, 96%);
-  display: grid;
-  place-items: center;
+  border-radius : 0 10px 10px 0;
+  box-shadow: 8px  8px 8px hsl(221, 100%, 96%);
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+ 
 }
 
 .summaryArea > button{
@@ -77,7 +97,7 @@ span{
   color: hsl(0, 0%, 100%);
   font-family: HankenGrotesk-Medium;
   font-size: 14px;
-  padding: 1rem 80px;
+  padding: 1rem 1rem;
   border-radius: 24px;
   border: none;
 }
@@ -86,14 +106,17 @@ span{
   font-family: HankenGrotesk-Bold;
   font-size: 20px;
   color: hsl(224, 30%, 27%);
+  place-self: start;
+  padding: 30px 10px;
 }
 
 .painelPointsArea{
   display: grid;
   gap: 16px;
   min-width: 250px;
-  padding: 10px;
+  padding: 0 0 50px 0;
   font-family: HankenGrotesk-Medium;
+  grid-template-rows: 1fr;
 }
 
 .reactArea,
@@ -106,22 +129,34 @@ span{
   border-radius: 16px;
   justify-content: space-between;
 }
+.percentage{
+  color: hsl(224, 30%, 27%);
+  font-weight: 600;
+  font-family: HankenGrotesk-Bold;
 
+  & .percentage-suffix{
+    opacity: 0.5;
+  }
+}
 .reactArea{
-  background-color: red;
+  background-color: hsl(0, 100%, 96%);
+  color: hsl(0, 100%, 67%);
 }
 .iconArea{
   display: flex;
   gap: 8px;
 }
 .memoryArea{
-  background-color: yellow;
+  background-color: hsl(39, 100%, 96%);
+  color: hsl(39, 100%, 56%);
 }
 .verbalArea{
-  background-color: green;
+  background-color: hsl(166, 100%, 96%);
+  color: hsl(166, 100%, 37%);
 }
 .visualArea{
-  background-color: blue;
+  background-color: hsl(234, 85%, 96%);
+  color: hsl(234, 85%, 45%);
 }
 
 
