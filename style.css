@@ -163,18 +163,11 @@ span{
 @media screen and (max-width: 600px) {
   .container{
     display: flex;
-    /* min-height: 100dvh; */
     flex-direction: column;
-
-
-
-
-
   }
   .resultArea{
     background-color: #fff;
 
-    
   }
 
   .summaryArea{
