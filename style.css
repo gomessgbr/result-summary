@@ -88,7 +88,6 @@ span{
   display: flex;
   flex-direction: column;
   padding: 0 60px;
- 
 }
 
 .summaryArea > button{
@@ -163,25 +162,27 @@ span{
 
 @media screen and (max-width: 600px) {
   .container{
-    display: grid;
-    min-height: 100dvh;
-    place-content: center;
-    background-color: #000;
-    grid-template-columns: 1fr;
-    grid-template-row: repeat(2, 1fr);
+    display: flex;
+    /* min-height: 100dvh; */
+    flex-direction: column;
+
+
+
 
 
   }
   .resultArea{
     background-color: #fff;
-    grid-column: 1;
-    min-height: 50dvh;
+
+    
   }
-  
+
   .summaryArea{
-    background-color: red;
-    grid-column: 1;
-    min-height: 50dvh;
+    padding: 40px 60px;
+  }
+
+  .attribution{
+    padding: 40px;
   }
 
 }
